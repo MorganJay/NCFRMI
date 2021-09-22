@@ -5,7 +5,7 @@ import { Header } from "../components/header";
 import { About } from "../components/about";
 import { Testimonials } from "../components/testimonials";
 import { Contact } from "../components/contact";
-import WhatWeDo from './../components/whatwedo';
+import WhatWeDo from "./../components/whatwedo";
 
 const HomePage = ({ landingPageData }) => {
   return (

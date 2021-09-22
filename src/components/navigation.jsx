@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
 export const Navigation = props => {
-  console.log(props);
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
       <div className="container">
@@ -23,9 +22,15 @@ export const Navigation = props => {
             target="_blank"
             rel="noreferrer"
             href="https://ncfrmi.gov.ng/"
+            title="NCFRMI Website"
+            style={{ padding: "0 10px 60px" }}
           >
-            <img src={props?.data?.logo} alt="" height="64" width="64" className="img-responsive" />
-           
+            <img
+              src={props?.data?.logo}
+              alt="NCFRMI Logo"
+              width="64"
+              className="img-responsive"
+            />
           </a>{" "}
         </div>
 
@@ -35,18 +40,8 @@ export const Navigation = props => {
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <a href="#features" className="page-scroll">
-                Features
-              </a>
-            </li>
-            <li>
               <a href="#about" className="page-scroll">
                 About
-              </a>
-            </li>
-            <li>
-              <a href="#services" className="page-scroll">
-                Services
               </a>
             </li>
             <li>
@@ -60,12 +55,7 @@ export const Navigation = props => {
               </a>
             </li>
             <li>
-              <a href="#team" className="page-scroll">
-                Team
-              </a>
-            </li>
-            <li>
-              <Link to="/form" className="page-scroll">
+              <Link to="/data-collection" className="page-scroll">
                 Data Collection
               </Link>
             </li>
