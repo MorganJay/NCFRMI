@@ -5,7 +5,7 @@ import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
 import HomePage from "./pages/HomePage";
-import DataCollection from "./pages/DataCollection";
+import DataCollection from "./pages/Data-Collection/DataCollection";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -25,7 +25,7 @@ const App = () => {
         <Route
           exact
           path="/"
-          render={props => (
+          render={(props) => (
             <HomePage landingPageData={landingPageData} {...props} />
           )}
         />
