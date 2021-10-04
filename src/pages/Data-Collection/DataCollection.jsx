@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, FormGroup, Input } from "reactstrap";
+import { Container, Input } from "reactstrap";
 import "../Data-Collection/DataCollection.style.css";
 
 const DataCollection = () => {
